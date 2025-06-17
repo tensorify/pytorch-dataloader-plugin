@@ -137,4 +137,6 @@ class PTDataLoader {
   }
 }
 
-module.exports = PTDataLoader; 
+module.exports = {
+  PTDataLoader
+}; 
