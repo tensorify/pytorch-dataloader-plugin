@@ -1,0 +1,98 @@
+{
+  "name": "PyTorch DataLoader Plugin",
+  "slug": "pytorch-dataloader-plugin",
+  "version": "1.0.0",
+  "description": "Enhanced PyTorch DataLoader node for efficient batch processing with configurable parameters including batch size, shuffling, and multi-processing",
+  "author": "Tensorify",
+  "license": "MIT",
+  "homepage": "https://tensorify.io/plugins/pytorch-dataloader",
+  "repository": "https://github.com/tensorify/pytorch-dataloader-plugin",
+  "keywords": [
+    "pytorch",
+    "dataloader",
+    "batch-processing",
+    "data-loading",
+    "machine-learning"
+  ],
+  "category": "data",
+  "tags": [
+    "pytorch",
+    "data",
+    "preprocessing",
+    "batch-processing"
+  ],
+  "tensorifyVersion": ">=1.0.0",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md"
+  ],
+  "dependencies": {
+    "@tensorify/types": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.9.0"
+  },
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "lint": "echo \"No linting specified\""
+  },
+  "nodes": [
+    {
+      "id": "PTDataLoader",
+      "name": "PyTorch DataLoader",
+      "description": "Enhanced PyTorch DataLoader for efficient batch processing with configurable parameters",
+      "category": "data",
+      "nodeType": "PREPROCESSING",
+      "version": "1.0.0",
+      "inputs": [
+        {
+          "name": "dataset",
+          "type": "dataset",
+          "required": true,
+          "description": "PyTorch dataset to load from"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dataloader",
+          "type": "dataloader",
+          "description": "Configured PyTorch DataLoader"
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "codeGeneration": true,
+    "connectionValidation": true,
+    "schemaValidation": true,
+    "securitySandbox": true
+  },
+  "security": {
+    "allowedImports": [
+      "torch",
+      "torch.utils.data",
+      "numpy"
+    ],
+    "maxExecutionTime": 30000,
+    "memoryLimit": 524288000,
+    "sandbox": true
+  },
+  "quality": {
+    "testCoverage": 0.90,
+    "documentation": "Complete",
+    "codeQuality": "A",
+    "maintainability": "High"
+  },
+  "isPublic": true,
+  "featured": false,
+  "verified": true,
+  "createdAt": "2025-06-17T20:00:00.000Z",
+  "updatedAt": "2025-06-17T20:00:00.000Z"
+} 
