@@ -1,0 +1,31 @@
+{
+  "name": "pytorch-dataloader-plugin",
+  "version": "1.0.0",
+  "description": "PyTorch DataLoader node for efficient batch loading and data preprocessing",
+  "main": "index.js",
+  "author": "Tensorify",
+  "license": "MIT",
+  "homepage": "https://tensorify.io/plugins/pytorch-dataloader",
+  "repository": "https://github.com/tensorify/pytorch-dataloader-plugin",
+  "keywords": [
+    "pytorch",
+    "dataloader",
+    "batch-loading",
+    "data-preprocessing",
+    "machine-learning"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "@tensorify/types": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.9.0"
+  },
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "lint": "echo \"No linting specified\""
+  }
+} 
